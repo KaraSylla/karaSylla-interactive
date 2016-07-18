@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MON CV JEU</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="cv en ligne Kara Sylla page d'accueil">
+    <link rel="stylesheet" href="./src/css/styles.css">
+  </head>
+  <body>
+    <div id="accueil">
+      <div>
+        <p id="textePresentation">
+          Hello je suis Kara Sylla <br>
+          Développeur intégrateur javascript full stack. <br>
+          Bienvenue sur mon site interactif.<br>
+          Récupère les pouces verts pour découvrir mes compétences...<br>
+        </p>
+        <button id="btnEnSavoirPlus" type="button" name="btnEnSavoirPlus">Pour en savoir plus cliquer ici</button>
+      </div>
+    </div>
+    <section id="container">
+      <section id="sectionHeader">
+        <header>
+          <nav>
+            <ul>
+              <li><a title="Accueil cv jeu" href="index.html"><img src="./src/img/home.png" alt="image-page-d'accueil" />CV jeu</a></li>
+              <li><a title="Portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a title="Télécharger cv" href="./src/cv/Kara-Sylla.pdf">Télécharger mon cv</a></li>
+              <li><a title="Contact" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+
+      <section id="sectionJeu">
+        <section id ="sectionGauche">
+          <div>
+          <h2>PRESENTATION</h2>
+          <img src="src/img/maPhoto.png" alt="Profil" />
+          <p>
+            Bonjour à tous je m'appelle Kara Sylla, j'ai 29 ans et mon objectif de vie est de devenir développeur javascript full stack.<br>
+          </p>
+          <br>
+          <p>
+            Ah!!! l'informatique. Plus qu'une passion un projet existentielle.<br>
+          </p>
+          <br>
+          <p>
+            En excluant l'autoformation, il y a maintenant 3 ans que je prépare ce projet de vie et ce de manière intense...<br>
+          </p>
+          <br>
+          <p>
+            Fraichement diplômé d'une certification de chef de projet multimédia, je continue aujourd'hui mon aventure à l'institut Ifocop pour une spécialisation de Développeur web javascript full stack à Paris.<br>
+          </p>
+          <br>
+          <p>
+            C'est dans ce contexte que je suis <strong>à la recherche d'un stage d'une durée de 4 mois du 29 février 2016 au 12 juillet 2016</strong>.<br>
+          </p>
+          <br>
+          <p>
+            Ce site cv jeu permet de découvrir de manière ludique mes compétences donc prenez du plaisir ^_^<br>
+          </p>
+          <br>
+          <p>
+            Alors si vous avez aimé, ou encore si vous voulez discuter sur comment réaliser la copie parfaite d'un objet, n'hésitez pas à me contacter.<br>
+          </p>
+          <br>
+          <p>
+            Vous trouverez mes coordonnées sur mon cv ainsi que dans la page contact.<br>
+          </p>
+          <br>
+        </section>
+        </div>
+        <div id="zoneDeJeu">
+          <div id="cacheZoneDeJeu">
+            <h1>Les règles du jeu</h1>
+              <p>
+                - Découvrez mes compétences en récupérant les pouces verts.
+                <br>
+                <br>
+                - Il vous faudra récupérer cinqs pouces dans le jeu, afin d'inscrire une compétence dans la section (compétence) prévu à cet effet.
+                <br>
+                <br>
+                - Vous avez 3 vies, elles sont représentées par les têtes de robots, attention aux bombes!!! Elles vous retire des vies et des points.
+                <br>
+                <br>
+                - votre nombre de points vous sera communiqué à la fin et variera en fonction du nombre de fois où vous serez touché.
+                <br>
+                <br>
+                - Lorsque vous aurez terminé vous aurez la possibilité de rejouer ou télécharger mon cv, vous pourrez également télécharger le cv directement depuis le menu.
+                <br>
+              </p>
+              <br>
+              <p>
+                READY -->
+              </p>
+              <br>
+            <div id="robotAnimeArret">
+              <img id="spriteRobotAnime"  src="./src/img/spriteRobotAnimeArret.png" alt="spriteRobotAnime"/>
+            </div>
+            <button id="btnStart" type="button" name="startGame">Start</button>
+            <img class="keyboard" src="./src/img/keyboard.png" alt="" />
+          </div>
+          <div class="mesVies">
+            <span><img src="./src/img/life.png" class="life1" alt="vie1" /></span>
+            <span><img src="./src/img/life.png" class="life2" alt="vie2" /></span>
+            <span><img src="./src/img/life.png" class="life3" alt="vie3" /></span>
+          </div>
+          <div class= "mesPouces">
+            <span class="decalPouce"><img src="./src/img/pouce.png" class="pouce1" alt="pouce-vert1" /></span>
+            <span><img src="./src/img/pouce.png" class="pouce2" alt="pouce-vert2" /></span>
+            <span><img src="./src/img/pouce.png" class="pouce3" alt="pouce-vert3" /></span>
+            <span><img src="./src/img/pouce.png" class="pouce4" alt="pouce-vert4" /></span>
+            <span><img src="./src/img/pouce.png" class="pouce5" alt="pouce-vert5" /></span>
+          </div>
+          <p id="scoreHTML">0 Points</p>
+
+          <!--Ici mon joueur-->
+          <div id="robot">
+            <img id="spriteRobotDeplacement"  src="./src/img/spritesrobot.png" alt="sprite-Robot-Deplacement"/>
+          </div>
+          <div id="mesObjets"></div>
+        </div>
+
+        <section id="sectionRight">
+          <ul>
+            <h2>COMPETENCE</h2>
+            <li class="competence1">
+              <p>Html5 & Css3 & Bootsrap</p>
+              <img src="./src/img/html.gif" alt="Html5" />
+              <img src="./src/img/css.gif" alt="Css3" />
+              <img src="./src/img/bootstrap.gif" alt="Bootsrap" />
+            </li>
+            <li class="competence2">
+              <p>Javascript & jQuery & AngularJs</p>
+              <img src="./src/img/javascript.gif" alt="Javascript" />
+              <img src="./src/img/jquery.gif" alt="jQuery" />
+              <img src="./src/img/angular.gif" alt="AngularJs" />
+            </li>
+            <li class="competence3"><p>MongoDB & NodeJS</p>
+              <img src="./src/img/mongo.gif" alt="MongoDB" />
+              <img src="./src/img/node.gif" alt="NodeJS" />
+            </li>
+            <li class="competence4">
+              <p>ExpressJS & Ajax</p>
+              <img src="./src/img/express.png" alt="ExpressJS" />
+              <img src="./src/img/ajax.png" alt="Ajax" />
+            </li>
+            <li class="competence5">
+              <p>Meteor </p>
+              <img src="./src/img/meteor.gif" alt="Meteor" />
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id ="footer">
+        <footer>
+          <audio id="audioPlayerFond" controls="controls">
+            <source src="./src/audio/Call_of_Duty.mp3" type="audio/mp3">
+            <source src="./src/audio/Call_of_Duty.ogg" type="audio/ogg">
+          </audio>
+
+          <audio id="OuverturePortail" controls="controls">
+            <source src="./src/audio/OuverturePortail.mp3" type="audio/mp3">
+            <source src="./src/audio/OuverturePortail.ogg" type="audio/ogg">
+          </audio>
+
+          <audio id="playerReadyJeu" controls="controls">
+            <source src="./src/audio/ready.mp3" type="audio/mp3">
+            <source src="./src/audio/ready.ogg" type="audio/ogg">
+          </audio>
+
+          <audio id="playerBoomJeu" controls="controls">
+            <source src="./src/audio/boom.mp3" type="audio/mp3">
+            <source src="./src/audio/boom.ogg" type="audio/ogg">
+          </audio>
+
+          <button class="soundBtn" type="button" name="audioPlayerFont">
+            <img src="./src/img/sound.png" alt="" />
+          </button>
+
+          <a title="linkedin" id="social" href="https://fr.linkedin.com/in/kara-sylla-24a88064">
+            <img src="./src/img/linkedin.png" alt="linkedin" />
+          </a>
+          <p>Tout droits réservés © 2016 - Kara Sylla</p>
+        </footer>
+      </section>
+    </section>
+
+
+    <script type="text/javascript" src="./src/librairie/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+  </body>
+</html>
